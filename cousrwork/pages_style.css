@@ -1,0 +1,227 @@
+/*------------SERVICES---------------*/
+#services-1-text>p:nth-child(1){
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+#services-1-text>p:nth-child(2), #services-1-text>p:nth-child(3){
+    font-family: 'Acumin Pro';
+}
+#service-text-border{
+    border-left: 5px solid var(--light-orange);
+    padding-left: 30px;
+    margin-top: 30px;
+}
+#service-text-border>p{
+    font-family: 'Acumin Pro Wide';
+    font-size: 18px;
+}
+#services-2-text{
+    margin-top: 20px;
+}
+#services-2-text>div>h3{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#services-2-text>div>p{
+    font-family: 'Acumin Pro';
+}
+#list-title-services>h3{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+    margin-top: 15px;
+}
+#service-list{
+    list-style-type: square;
+    color: var(--light-orange);
+    margin-top: 15px;
+    padding-left: 20px;
+}
+#service-list>li{
+    padding: 8px;
+}
+#service-list>li>span{
+    color: black;
+    font-family: 'Acumin Pro Wide';
+}
+
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 768px){
+    #service-list{
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 576px){
+    #services-1{
+        margin-top: 100px;
+    }
+}
+/*------------WORKS---------------*/
+#works-1-text>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+}
+#works-1-text>p:nth-of-type(2), #works-1-text>p:nth-of-type(3){
+    font-family: 'Acumin Pro';
+}
+#works-text-border{
+    border-left: 5px solid var(--light-orange);
+    padding-left: 30px;
+    margin-top: 50px;
+}
+#works-text-border>p{
+    font-family: 'Acumin Pro Wide';
+    font-size: 18px;
+}
+#works-process{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#works-process>h4{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#works-process>p{
+    font-family: 'Acumin Pro';
+}
+#works-2-text{
+    margin-top: 50px;
+}
+#works-2-text>div:nth-of-type(1)>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+#works-2-text>div:nth-of-type(1)>p:nth-of-type(2){
+    font-family: 'Acumin Pro';
+}
+#works-2-text>div:nth-of-type(2)>p{
+    font-family: 'Acumin Pro Wide';
+}
+#how-it-works>div:hover{
+    background-color: #eeeeee;
+}
+#how-it-works>div{
+    width: 285.5px;
+}
+#how-it-works>div>img{
+    margin-top: -25px;
+    width: 285.5px;
+}
+#how-it-works-1, #how-it-works-2, #how-it-works-3, #how-it-works-4{
+    padding: 30px 0px 40px 50px;
+
+}
+#how-it-works-1>h5, #how-it-works-2>h5, #how-it-works-3>h5, #how-it-works-4>h5{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+    margin-top: 20px;
+}
+#how-it-works-1>p, #how-it-works-2>p, #how-it-works-3>p, #how-it-works-4>p{
+    font-family: 'Acumin Pro';
+}
+
+@media screen and (max-width: 1200px){
+    #how-it-works>div{
+        width: 240px;
+    }
+    #how-it-works>div>img{
+        width: 240px; 
+    }
+}
+@media screen and (max-width: 992px){
+    #how-it-works>div{
+        width: 180px;
+    }
+    #how-it-works>div>img{
+        width: 180px; 
+    }
+    #how-it-works-1, #how-it-works-2, #how-it-works-3, #how-it-works-4{
+        padding: 10px 10px 30px 15px;
+        font-size: 14px;
+    }
+    #works-img>img{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 768px){
+    #how-it-works>div{
+        width: 540px;
+        text-align: center;
+    }
+    #how-it-works>div>img{
+        width: 540px;
+        height: 2px;
+    }
+    #works-img>img{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 576px){
+    #works-1{
+        margin-top: 80px;
+    }
+}
+/*------------DISCOUNTS------------*/
+#discounts-1-text>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+#discounts-1-text>p:nth-of-type(2), #discounts-1-text>p:nth-of-type(3){
+    font-family: 'Acumin Pro';
+}
+#discounts-text-border{
+    border-left: 5px solid var(--light-orange);
+    padding-left: 30px;
+    margin-top: 50px;
+}
+#discounts-text-border>p{
+    font-family: 'Acumin Pro Wide';
+    font-size: 18px;
+}
+#discounts-2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#discounts-2>div>h4{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#discounts-2>div>p{
+    font-family: 'Acumin Pro';
+}
+#discounts-end{
+    margin-top: 50px;
+}
+#discounts-end>p{
+    font-family: 'Acumin Pro Wide';
+    font-size: 20px;
+    padding-left: 30px;
+}
+#discounts-end>img{
+    height: 50px;
+}
+@media screen and (max-width: 1200px){
+}
+@media screen and (max-width: 992px){
+    #discounts-img>img{
+        height: 600px;
+    }
+
+@media screen and (max-width: 768px){
+    #discounts-img{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 576px){
+    #discounts-1{
+        margin-top: 80px;
+    }
+}

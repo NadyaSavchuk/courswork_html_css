@@ -1,0 +1,167 @@
+#prices-text-1>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+}
+#prices-text-1>p:nth-of-type(2), #prices-text-1>p:nth-of-type(3){
+    font-family: 'Acumin Pro';
+}
+#prices-border{
+    border-left: 5px solid var(--light-orange);
+    padding-left: 30px;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+#prices-border>p{
+    font-family: 'Acumin Pro Wide';
+    font-size: 18px;
+    font-weight: bold;
+}
+#prices-2{
+    box-shadow: 0px 5px 20px 2px rgba(34, 60, 80, 0.2);
+}
+#prices-2-head{
+    font-family: 'Acumin Pro Wide';
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#prices-2-head>p{
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-top: 20px;
+}
+#prices-table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Acumin Pro Wide';
+}
+.table-color{
+    background-color: #fafafa;
+    height: 30px;
+}
+.table-days{
+    padding-left: 20px;
+}
+.table-price{
+    padding-left: 500px;
+}
+.table-page{
+    font-weight: bold;
+}
+#button-end{
+    height: 40px;
+    width: 174px;
+    border: none;
+    background-color: var(--dark-orange);
+    color: white;
+    margin-bottom: 40px;
+}
+#button-end:hover{
+    color: black;
+}
+#table-button{
+    text-align: center;
+}
+#prices-text-3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#prices-text-3>div:nth-of-type(1)>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+}
+#prices-text-3>div:nth-of-type(1)>p:nth-of-type(2){
+    font-family: 'Acumin Pro';
+}
+#prices-text-3>div:nth-of-type(2){
+    font-family: 'Acumin Pro';
+    padding-left: 15px;
+}
+#benefits-desc{
+    background: url(img/benefits.png) no-repeat;
+    background-size: 100%;
+    height: 300px;
+}
+#benefits-desc>button{
+    background-color: var(--dark-orange);
+    color: white;
+    border: none;
+    height: 48px;
+    width: 178px;
+    margin-top: 70px;
+    margin-left: 850px;
+}
+#benefits-desc>button:hover{
+    color: black;
+}
+#benefits-mob{
+    background: url(img/benefits_se.png) no-repeat;
+    background-size: contain;
+    height: 320px;
+    margin-top: -340px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    visibility: collapse;
+}
+#benefits-mob>button{
+    height: 40px;
+    width: 220px;
+    background-color: var(--dark-orange);
+    color: white;
+    border: none;
+    margin-top: 265px;
+    margin-left: 27px;
+}
+#benefits-mob>button:hover{
+    color: black;
+}
+@media screen and (max-width: 1200px){
+    #benefits-desc>button{
+        margin-top: 55px;
+        margin-left: 720px;
+    }
+}
+@media screen and (max-width: 992px){
+    #prices-img>img{
+        height: 550px;
+        margin-top: 60px;
+    }
+    .table-days{
+        padding-left: 20px;
+    }
+    .table-price{
+        padding-left: 350px;
+    }
+    #benefits-desc>button{
+        height: 35px;
+        width: 150px;
+        margin-top: 40px;
+        margin-left: 520px;
+    }
+} 
+@media screen and (max-width: 768px){
+    #prices-img>img{
+       margin-left: 50px;
+    }
+    .table-days{
+        padding-left: 20px;
+    }
+    .table-price{
+        padding-left: 180px;
+    }
+    #prices-text-3>div:nth-of-type(2){
+        padding-left: 0px;
+    }
+    #benefits-mob{
+        visibility: visible;
+        padding-top: -800px;
+    }
+    #benefits-desc{
+        visibility: collapse;
+    }
+}
+@media screen and (max-width: 576px){
+    #prices-1{
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,686 @@
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('./fonts/AcuminPro-Regular.otf');
+}
+@font-face{
+    font-family: 'Acumin Pro Wide';
+    src: url('/fonts/AcuminProWide-Regular.otf');
+}
+:root{
+    --light-orange: #fcbf49;
+    --dark-orange: #f77f00;
+    --classic-red: #d62828;
+    --beige: #eae2b7;
+    --dark-blue: #263f5c;
+    --text-color: #5e616f;
+    --text-gray: #a2a3ab;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* -----------------HEADER------------------- */
+#banner{
+    background: url(img/header_inside.png) no-repeat;
+    background-size: cover;
+    height: 220px;
+}
+header{
+    height: 125px;
+}
+#head{
+    margin-top: 40px;
+}
+#head>h1{
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: end;
+    font-family: 'Acumin Pro';
+    font-size: 16px;
+    margin-top: 6px;
+}
+nav ul li{
+    list-style-type: none;
+    padding-right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a:hover{
+    color: var(--dark-orange);
+    text-decoration: none;
+}
+nav button{
+    background-color: var(--dark-orange);
+    height: 40px;
+    width: 120px;
+    color: white;
+    border: 1px solid white;
+}
+nav button:hover{
+    color: var(--dark-orange);
+    border: 1px solid var(--dark-orange);
+}
+#contacts{
+    display: flex;
+    justify-content: end;
+    color: black;
+    margin-top: 20px;
+}
+#breadcrumps>p>a{
+    color: black;
+    text-decoration: none;
+}
+#breadcrumps>p>span{
+    color: var(--text-gray);
+}
+#breadcrumps>p>img{
+    padding: 5px;
+    margin-top: -5px;
+}
+/* BURGERMENU------------------- */
+
+#header_burg{
+    display: none;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+#burg_head{
+    height: 50px;
+}
+#burg_menu>img:nth-of-type(1){
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+#burg_menu>button:nth-of-type(1){
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: var(--dark-orange);
+    color: white;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+#burg_menu>button:nth-of-type(2){
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid var(--text-gray);
+    margin-left: 5px;
+    margin-top: -10px;
+}
+#phone_burg{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+    position: sticky;
+    width: 26px;
+    height: 26px;  
+    cursor: pointer;
+    z-index: 3;
+    padding-top: 15px;
+}
+.menu__btn > span,.menu__btn > span::before, .menu__btn > span::after {
+  display: block;
+  position: absolute;  width: 100%;
+  height: 2.5px;  background-color: #616161;
+  z-index: 1;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;  width: 200px;
+    height: 100%;  margin: 0;
+    padding: 80px 0;  list-style: none;
+    text-align: start;  background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+.menu__item {
+    display: block;
+    padding: 12px 24px;  color: #333;  
+    font-family: 'Acumin Pro';
+    font-size: 20px;
+    font-weight: 600;  
+    text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+    color: var(--dark-orange);
+    text-decoration: none;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+  transition-duration: .25s;
+}.menu__box {
+  transition-duration: .25s;
+}.menu__item {
+  transition-duration: .25s;
+}
+/* BURGERMENU END------------------- */
+@media screen and (max-width: 1200px){
+    #banner{
+        height: 180px;
+    }
+    #logo>div>a>img{
+        height: 30px;
+    }
+    #logo>div{
+        margin-top: 5px;
+    }
+    nav{
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width: 992px){
+    #banner{
+        height: 160px;
+    }
+    #logo>div{
+        margin-top: -41px;
+    }
+    nav{
+      margin-top: 10px;
+      font-size: 17.5px;
+    }
+    #head>h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    #banner{
+        height: 140px;
+    }
+    #logo>div>a>img{
+        height: 25px;
+        margin-top: 5px;
+    }
+    #contacts{
+        font-size: 12px;
+    }
+    nav{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    nav>button{
+        height: 30px;
+        width: 90px;
+    }
+    #head>h1{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 576px){
+    header{
+        display: none;
+    }
+    #header_burg{
+        display: block;
+    }
+    #head{
+        padding-top: 70px;
+
+    }
+}
+/*------------AFFILIATE------------*/
+#affiliate_desk{
+    background: url(img/Affiliate.png) no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    font-family: 'Acumin Pro Wide';
+    margin-top: 70px;
+}
+#affiliate_desk_1{
+    margin-left: 280px;
+    margin-top: 55px;
+}
+#affiliate_desk_1>p:nth-of-type(2){
+    font-size: 25px;
+    font-weight: bold;
+}
+#affiliate_desk_1>p:nth-of-type(1){
+    font-weight: bold;
+}
+#affiliate_desk_1>p:nth-of-type(2)>span{
+    color: var(--dark-orange);
+}
+#affiliate_desk_1>p:nth-of-type(3){
+    font-size: 14px;
+}
+#affiliate_desk_2{
+    margin-top: 70px;
+    margin-left: 150px;
+}
+#affiliate_desk_2>button{
+    height: 56px;
+    width: 204px;
+    background-color: var(--light-orange);
+    border: none;
+    margin-left: 20px;
+}
+#affiliate_desk_2>button:hover{
+    color: white;
+}
+#affiliate_desk_2>p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+#affiliate_mob{
+    visibility: collapse;
+    background: url(img/affiliate-SE.png) no-repeat;
+    background-size: 100%;
+    margin-left: 100px;
+}
+#affiliate_mob>div{
+    margin-top: 110px;
+    padding: 20px;
+    font-family: 'Acumin Pro Wide';
+}
+#affiliate_mob>div>p:nth-of-type(1){
+    font-size: 12px;
+}
+#affiliate_mob>div>p:nth-of-type(2){
+    font-weight: bold;
+}
+#affiliate_mob>div>button{
+   background-color: var(--light-orange);
+   height: 40px;
+   width: 224px;
+   border: none;
+}
+#affiliate_mob>div>p:nth-of-type(3){
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1200px){
+    #affiliate_desk_1{
+        margin-left: 220px;
+        margin-top: 45px;
+    }
+    #affiliate_desk_2{
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 992px){
+    #affiliate_desk{
+        margin-top: 100px;
+    }
+    #affiliate_desk_1{
+        margin-left: 180px;
+        margin-top: 30px;
+    }
+    #affiliate_desk_1>p:nth-of-type(1){
+        font-weight: bold;
+        font-size: 11px;
+    }
+    #affiliate_desk_1>p:nth-of-type(2){
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #affiliate_desk_1>p:nth-of-type(3){
+        font-size: 11px;
+    }
+    #affiliate_desk_2{
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+    #affiliate_desk_2>button{
+        height: 46px;
+        width: 164px;
+    }
+    #affiliate_desk_2>p{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    #affiliate_desk{
+        visibility: collapse;
+    }
+    #affiliate_mob{
+        visibility: visible;
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 576px){
+
+}
+/*------------TESTIMONIALS---------------*/
+#testimonials{
+    background: url(img/testimonials.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+    font-family: 'Acumin Pro';
+}
+#testimonials>div{
+    margin-top: 100px;
+}
+.test{
+    box-shadow: 0px 5px 15px 0px #223c5033;
+    border-radius: 15px;
+    padding: 30px 20px 30px 40px;
+    background-color: white;
+    margin-left: 40px;
+    animation: slider 5s ease .2s infinite;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    35%{
+        left: -220px;
+    }
+    65%{
+        left: -440px;
+    }
+    100%{
+        left: -640px;
+    }
+}
+.test>div>p:nth-of-type(2){
+    margin-left: 200px; 
+}
+.test>div{
+    margin-bottom: 10px;
+}
+.test>p:nth-of-type(2)>span{
+    color: var(--dark-blue);
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+    .test{
+        padding: 30px 20px 30px 30px;
+    }
+}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 576px){
+}
+
+/*----------DISCOUNTS-----------*/
+
+#our-discounts{
+    background: url(img/discounts.png) no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+#our-discounts>div>h2{
+    padding-top: 140px;
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+#our-discounts>div>p{
+    font-family: 'Acumin Pro Wide';
+}
+#discounts{
+    padding-top: 50px;
+    position: absolute;
+    left: 300px;
+}
+#discounts>div{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#discount-1{
+    background-color: white;
+    height: 373px;
+    box-shadow: 0px 5px 15px 0px #223c5033;
+    font-family: 'Acumin Pro Wide';
+} 
+#discount-1:hover{
+    border: 1px solid var(--dark-orange);
+}
+#discount-1>p:nth-of-type(1){
+    color: var(--classic-red);
+    font-size: 30px;
+    font-weight: bold;
+}
+#discount-1>p:nth-of-type(1)>span, #discount-1>p:nth-of-type(2){
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: normal;
+}
+#discount-1>p:nth-of-type(3){
+    color: var(--dark-blue);
+    font-size: 25px;
+    font-weight: bold;
+}
+#discount-1>img{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#discount-1>button{
+    height: 40px;
+    width: 200px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid var(--text-gray);
+}
+#discount-1>button:hover{
+    background-color: var(--dark-orange);
+    color: white;
+    border: 1px solid var(--dark-orange);
+}
+
+@media screen and (max-width: 1200px){
+    #discounts{
+        left: 130px;
+    }
+}
+@media screen and (max-width: 992px){
+    #discounts{
+        left: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    #discount-1{
+        animation: discount 5s ease .2s infinite;
+        margin-left: 30px;
+        left: 0px;
+    }
+    @keyframes discount{
+        0%{
+            left: 0;
+        }
+        35%{
+            left: -160px;
+        }
+        65%{
+            left: -340px;
+        }
+        100%{
+            left: -480px;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+}
+/*------------FOOTER---------------*/
+footer{
+    background: url(img/footer.png);
+    height: 400px;
+    font-family: 'Acumin Pro';
+}
+#footer-menu{
+    padding-top: 60px;
+    color: white;
+}
+#foot-services>ul>li{
+    list-style-type: none;
+}
+#foot-services>ul>li>a{
+    color: white;
+}
+#foot-services>ul>li>a:hover{
+    color: var(--light-orange);
+    text-decoration: none;
+}
+#foot-2>div>ul>li{
+    list-style-type: none;
+    padding: 5px;
+}
+#foot-3>div>ul>li{
+    list-style-type: none;
+    padding: 5px;
+}
+#foot-services{
+    padding-left: 100px;
+}
+#foot-end{
+    padding-top: 20px;
+    color: white;
+}
+#foot-end>hr{
+    border: 1px solid var(--text-color);
+}
+@media screen and (max-width: 1200px){
+    #foot-services{
+        padding-left: 90px;
+    }
+}
+@media screen and (max-width: 992px){
+    #foot-logo{
+        height: 28px;
+    }
+    #foot-phones{
+        font-size: 16px;
+    }
+    #foot-email{
+        font-size: 14px;
+    }
+    #foot-end>p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px){
+    footer{
+        height: 860px;
+    }
+    #footer-menu{
+        padding-top: 30px;
+    }
+    #foot-logo{
+        height: 35px;
+    }
+    #foot-phones{
+        font-size: 20px;
+    }
+    #foot-email{
+        font-size: 20px;
+    }
+    #foot-services{
+        padding-left: 15px;
+        font-size: 20px;
+    }
+}
+/*------------FIRSTORDER---------------*/
+#first-order-des{
+    background: url(img/1st_order.png) no-repeat;
+    background-size: 100%;
+    height: 200px;
+    margin-top: 40px;
+}
+#first-order-des>button{
+    margin-left: 850px;
+    margin-top: 55px;
+    height: 56px;
+    width: 204px;
+    border: none;
+    background-color: var(--light-orange);
+    color: black;
+    font-family: 'Acumin Pro';
+}
+#first-order-des>button:hover{
+    color: white;
+}
+#first-order-mob{
+    visibility: collapse;
+}
+#first-order-mob{
+    background: url(img/1st_order_se.png) no-repeat center;
+    background-size: contain;
+    height: 250px;
+    margin-top: 30px;
+}
+#first-order-mob>button{
+    height: 35px;
+    width: 134px;
+    border: none;
+    background-color: var(--light-orange);
+    color: black;
+    font-family: 'Acumin Pro';
+    margin-left: 190px;
+    margin-top: 170px;
+}
+#first-order-mob>button:hover{
+    color: white;
+}
+@media screen and (max-width: 1200px){
+    #first-order-des>button{
+        margin-left: 700px;
+        margin-top: 45px;
+    }
+}
+@media screen and (max-width: 992px){
+    #first-order-des{
+        margin-top: 100px;
+    }
+    #first-order-des>button{
+        height: 46px;
+        width: 164px;
+        margin-left: 500px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    #first-order-des{
+        visibility: collapse;
+    }
+    #first-order-mob{
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 576px){
+}

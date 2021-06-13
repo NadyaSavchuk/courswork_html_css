@@ -1,0 +1,143 @@
+#contacts-texts{
+    margin-bottom: 30px;
+}
+#contacts-img{
+    background: url(img/Order-img.png) no-repeat;
+    background-size: cover;
+}
+#contacts-block{
+    box-shadow: -10px 20px 20px -10px #bbbbbbbf;
+    margin-bottom: 100px;
+}
+#contacts-text>p:nth-of-type(1){
+    font-family: 'Acumin Pro Wide';
+    font-weight: bold;
+}
+#contacts-text>p:nth-of-type(2){
+    font-family: 'Acumin Pro';
+}
+#contacts-block{
+    margin-top: 20px;
+}
+#contacts-input-head>div>h4{
+    font-family: 'Acumin Pro Wide';
+}
+#contacts-input-1, #contacts-input-2{
+    margin-bottom: 20px;
+}
+#contacts-input-2{
+    display: flex;
+    justify-content: space-between;
+}
+#contacts-input-1>input{
+    width: 100%;
+}
+#contacts-input-3>input{
+    width: 100%;
+    height: 80px;
+    padding: 0px 0px 45px 5px;
+}
+#contacts-button{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+#contacts-button>button{
+    height: 40px;
+    width: 174px;
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+}
+#contacts-button>button:hover{
+    color: var(--light-orange);
+}
+#contacts-input-info{
+    margin-left: 130px;
+}
+#contacts-input-info>div:nth-of-type(2){
+    margin-left: 100px;
+}
+#contacts-input-info>div:nth-of-type(1)>span>img{
+    margin-left: -30px;
+}
+#contacts-input-info>div:nth-of-type(2)>span>img{
+    margin-left: -30px;
+}
+#contacts-input-info>div:nth-of-type(1)>p>a{
+    color: var(--classic-red);
+}
+#contacts-input-1>p, #contacts-input-3>p{
+    color: var(--text-gray);
+}
+#contacts-input-2>div>p{
+    color: var(--text-gray); 
+}
+#contacts-img>p{
+    margin-top: 350px;
+    margin-left: 80px;
+}
+#contacts-img>p>a{
+    font-family: 'Acumin Pro Wide';
+    color: var(--classic-red);
+    font-weight: bold;
+    text-decoration: none;
+}
+@media screen and (max-width: 1200px){
+    #contacts-input-info{
+       padding-left: 100px;
+    }
+    #contacts-input-head>div>h4{
+        width: 140px;
+    }
+    #contacts-input-2>div>input{
+        width: 180px;
+    }
+    #contacts-img{
+        background-position: center;
+    }
+    #contacts-img>p{
+        margin-top: 380px;
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width: 992px){
+    #contacts-input-info{
+       margin-left: -30px;
+     }
+     #contacts-input-2>div>input{
+        width: 140px;
+    }
+} 
+@media screen and (max-width: 768px){
+    #contacts-input-info{
+        padding-left: 150px;
+     }
+     #contacts-input-2>div>input{
+        width: 150px;
+    }
+    #contacts-input-2>div>input{
+        width: 100%;
+    }
+    #contacts-input-2>div{
+        margin-top: 20px;
+    }
+    #contacts-img{
+        background-position: contain;
+        height: 500px;
+        border: 1px solid transparent;
+        margin-top: 70px;
+    }
+    #contacts-img>p{
+        margin-top: 410px;
+        margin-left: 110px;
+    }
+    #contacts-button>button{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    #contacts-texts{
+        margin-top: 80px;
+    }
+}
+
